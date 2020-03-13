@@ -1529,6 +1529,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button,
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
+	margin-left: -15%;
 }
 
 input[type="submit"]:after, input[type="reset"]:after, input[type="button"]:after,

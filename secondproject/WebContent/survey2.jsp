@@ -19,16 +19,16 @@
 }
 
 body {
-   background:pink;
+   background:cadetblue;
    color: #fff;
    padding-bottom: 10%;
 }
 
 h2 {
    text-align: center;
-   margin: 20% 0 5%;
+   margin: 8% 0 5%;
    font-family: verdana;
-   font-weight: 100;
+   font-weight: 50;
 }
 
 .in {
@@ -339,9 +339,9 @@ label {
    left: 80%;
 }
 
-#btn_group button{ border: 2px solid gray;
+#btn_group button{ border: 3px solid white;
  background-color: rgba(0,0,0,0); 
- color: gray; 
+ color: pink; 
  padding: 5px; }
 
 #btn_group button:hover{ 
@@ -653,12 +653,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+            <label for="input1" class = "mo1"></label>
+            <input id="input1" name="radio1" type="radio" /> 
+            <label class = "mo2" for="input2"></label> 
+            <input id="input2" name="radio1" type="radio" />
+            <label class = "mo3" for="input3"></label> 
+            <input id="input3" name="radio1" type="radio" />
+            <label class = "mo4" for="input4"></label>
+            <input id="input4" name="radio1" type="radio" />
+            <label class="mo5" for="input5"></label>
+            <input id="input5" name="radio1" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -672,12 +677,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+             <label for="input6" class = "mo1"></label>
+            <input id="input6" name="radio2" type="radio" /> 
+            <label class = "mo2" for="input7"></label> 
+            <input id="input7" name="radio2" type="radio" />
+            <label class = "mo3" for="input8"></label> 
+            <input id="input8" name="radio2" type="radio" />
+            <label class = "mo4" for="input9"></label>
+            <input id="input9" name="radio2" type="radio" />
+            <label class="mo5" for="input10"></label>
+            <input id="input10" name="radio2" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -691,12 +701,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+            <label for="input11" class = "mo1"></label>
+            <input id="input11" name="radio3" type="radio" /> 
+            <label class = "mo2" for="input12"></label> 
+            <input id="input12" name="radio3" type="radio" />
+            <label class = "mo3" for="input13"></label> 
+            <input id="input13" name="radio3" type="radio" />
+            <label class = "mo4" for="input14"></label>
+            <input id="input14" name="radio3" type="radio" />
+            <label class="mo5" for="input15"></label>
+            <input id="input15" name="radio3" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -711,12 +726,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+           <label for="input16" class = "mo1"></label>
+            <input id="input16" name="radio4" type="radio" /> 
+            <label class = "mo2" for="input17"></label> 
+            <input id="input17" name="radio4" type="radio" />
+            <label class = "mo3" for="input18"></label> 
+            <input id="input18" name="radio4" type="radio" />
+            <label class = "mo4" for="input19"></label>
+            <input id="input19" name="radio4" type="radio" />
+            <label class="mo5" for="input20"></label>
+            <input id="input20" name="radio4" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -730,12 +750,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+             <label for="input21" class = "mo1"></label>
+            <input id="input21" name="radio5" type="radio" /> 
+            <label class = "mo2" for="input22"></label> 
+            <input id="input22" name="radio5" type="radio" />
+            <label class = "mo3" for="input23"></label> 
+            <input id="input23" name="radio5" type="radio" />
+            <label class = "mo4" for="input24"></label>
+            <input id="input24" name="radio5" type="radio" />
+            <label class="mo5" for="input25"></label>
+            <input id="input25" name="radio5" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -749,12 +774,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+            <label for="input26" class = "mo1"></label>
+            <input id="input26" name="radio6" type="radio" /> 
+            <label class = "mo2" for="input27"></label> 
+            <input id="input27" name="radio6" type="radio" />
+            <label class = "mo3" for="input28"></label> 
+            <input id="input28" name="radio6" type="radio" />
+            <label class = "mo4" for="input29"></label>
+            <input id="input29" name="radio6" type="radio" />
+            <label class="mo5" for="input30"></label>
+            <input id="input30" name="radio6" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -768,12 +798,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+             <label for="input31" class = "mo1"></label>
+            <input id="input31" name="radio7" type="radio" /> 
+            <label class = "mo2" for="input32"></label> 
+            <input id="input32" name="radio7" type="radio" />
+            <label class = "mo3" for="input33"></label> 
+            <input id="input33" name="radio7" type="radio" />
+            <label class = "mo4" for="input34"></label>
+            <input id="input34" name="radio7" type="radio" />
+            <label class="mo5" for="input35"></label>
+            <input id="input35" name="radio7" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -787,12 +822,18 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+            <label for="input36" class = "mo1"></label>
+            <input id="input36" name="radio8" type="radio" /> 
+            <label class = "mo2" for="input37"></label> 
+            <input id="input372" name="radio8" type="radio" />
+            <label class = "mo3" for="input38"></label> 
+            <input id="input38" name="radio8" type="radio" />
+            <label class = "mo4" for="input39"></label>
+            <input id="input39" name="radio8" type="radio" />
+            <label class="mo5" for="input40"></label>
+            <input id="input40" name="radio8" type="radio" /> 
+            <span id="slider"></span>
+      </div>
          </div>
       </div>
       <div class="out">
@@ -806,12 +847,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+            <label for="input41" class = "mo1"></label>
+            <input id="input41" name="radio9" type="radio" /> 
+            <label class = "mo2" for="input42"></label> 
+            <input id="input42" name="radio9" type="radio" />
+            <label class = "mo3" for="input43"></label> 
+            <input id="input43" name="radio9" type="radio" />
+            <label class = "mo4" for="input44"></label>
+            <input id="input44" name="radio9" type="radio" />
+            <label class="mo5" for="input45"></label>
+            <input id="input45" name="radio9" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -825,12 +871,17 @@ keyframes input50 { 30%, 70% {
       </div>
       <div class="in">
          <div class="ab">
-            <label for="input1"></label> <input id="input1" name="radio"
-               type="radio" /> <label for="input2"></label> <input id="input2"
-               name="radio" type="radio" /> <label for="input3"></label> <input
-               id="input3" name="radio" type="radio" /> <label for="input4"></label>
-            <input id="input4" name="radio" type="radio" /> <label for="input5"></label>
-            <input id="input5" name="radio" type="radio" /> <span id="slider"></span>
+             <label for="input46" class = "mo1"></label>
+            <input id="input46" name="radio10" type="radio" /> 
+            <label class = "mo2" for="input47"></label> 
+            <input id="input47" name="radio10" type="radio" />
+            <label class = "mo3" for="input48"></label> 
+            <input id="input48" name="radio10" type="radio" />
+            <label class = "mo4" for="input49"></label>
+            <input id="input49" name="radio10" type="radio" />
+            <label class="mo5" for="input50"></label>
+            <input id="input50" name="radio10" type="radio" /> 
+            <span id="slider"></span>
          </div>
       </div>
       <div class="out">
@@ -840,6 +891,35 @@ keyframes input50 { 30%, 70% {
  <div id="btn_group">
 <button onclick="location='survey.jsp'" id="btn1">이전페이지</button>
 <button onclick="location='survey3.jsp'" id="btn2">다음페이지</button>
-</div>  
+</div> 
+<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+   <script type="text/javascript">
+   
+      $('.mo1').on('click',check);
+      
+      function check(){
+         console.log('write');
+      }
+   $('.mo2').on('click',check1);
+      
+      function check1(){
+         console.log('write1');
+      }
+   $('.mo3').on('click',check2);
+      
+      function check2(){
+         console.log('write2');
+      }
+   $('.mo4').on('click',check3);
+      
+      function check3(){
+         console.log('write3');
+      }
+   $('.mo5').on('click',check4);
+      
+      function check4(){
+         console.log('write4');
+      }
+      </script> 
 </body>
 </html>
