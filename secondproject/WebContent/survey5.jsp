@@ -890,7 +890,7 @@ keyframes input50 { 30%, 70% {
  
  <div id="btn_group">
   <button onclick="location='survey4.jsp'">이전페이지</button>
-  <button onclick="location='main2.html'">결과확인</button>
+  <button onclick="location='welcome.html'">결과확인</button>
   </div>
   <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
    <script type="text/javascript">
