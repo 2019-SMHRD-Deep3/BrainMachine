@@ -18,7 +18,7 @@ public class ResultDAO {
 			String db_id = "hr";
 			String db_pw = "hr";
 			conn = DriverManager.getConnection(db_url, db_id, db_pw);
-		} catch (ClassNotFoundException e) {
+		} catch (ClassNotFoundException e)  {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
