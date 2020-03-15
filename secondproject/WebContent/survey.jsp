@@ -828,7 +828,7 @@ keyframes input50 { 30%, 70% {
            <label for="input36" class = "mo1"></label>
             <input id="input36" name="radio8" type="radio" /> 
             <label class = "mo2" for="input37"></label> 
-            <input id="input372" name="radio8" type="radio" />
+            <input id="input37" name="radio8" type="radio" />
             <label class = "mo3" for="input38"></label> 
             <input id="input38" name="radio8" type="radio" />
             <label class = "mo4" for="input39"></label>
