@@ -1,3 +1,4 @@
+<%@page import="com.ResultDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -651,18 +652,18 @@ keyframes input50 { 30%, 70% {
       <div class="out">
          <span class="textagree">비동의</span>
       </div>
-      <div class="in">
+        <div class="in">
          <div class="ab">
          <label for="input1" class = "mo1"></label>
-            <input id="input1" name="radio1" type="radio" /> 
+            <input id="input1" name="radio1" type="radio" value ="1"/> 
             <label class = "mo2" for="input2"></label> 
-            <input id="input2" name="radio1" type="radio" />
+            <input id="input2" name="radio1" type="radio" value ="2"/>
             <label class = "mo3" for="input3"></label> 
-            <input id="input3" name="radio1" type="radio" />
+            <input id="input3" name="radio1" type="radio" value ="3"/>
             <label class = "mo4" for="input4"></label>
-            <input id="input4" name="radio1" type="radio" />
+            <input id="input4" name="radio1" type="radio" value ="4"/>
             <label class="mo5" for="input5"></label>
-            <input id="input5" name="radio1" type="radio" /> 
+            <input id="input5" name="radio1" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -678,15 +679,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
              <label for="input6" class = "mo1"></label>
-            <input id="input6" name="radio2" type="radio" /> 
+            <input id="input6" name="radio2" type="radio" value ="1"/> 
             <label class = "mo2" for="input7"></label> 
-            <input id="input7" name="radio2" type="radio" />
+            <input id="input7" name="radio2" type="radio" value ="2"/>
             <label class = "mo3" for="input8"></label> 
-            <input id="input8" name="radio2" type="radio" />
+            <input id="input8" name="radio2" type="radio" value ="3"/>
             <label class = "mo4" for="input9"></label>
-            <input id="input9" name="radio2" type="radio" />
+            <input id="input9" name="radio2" type="radio" value ="4"/>
             <label class="mo5" for="input10"></label>
-            <input id="input10" name="radio2" type="radio" /> 
+            <input id="input10" name="radio2" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -702,15 +703,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
             <label for="input11" class = "mo1"></label>
-            <input id="input11" name="radio3" type="radio" /> 
+            <input id="input11" name="radio3" type="radio" value ="1"/> 
             <label class = "mo2" for="input12"></label> 
-            <input id="input12" name="radio3" type="radio" />
+            <input id="input12" name="radio3" type="radio" value ="2"/>
             <label class = "mo3" for="input13"></label> 
-            <input id="input13" name="radio3" type="radio" />
+            <input id="input13" name="radio3" type="radio" value ="3"/>
             <label class = "mo4" for="input14"></label>
-            <input id="input14" name="radio3" type="radio" />
+            <input id="input14" name="radio3" type="radio" value ="4"/>
             <label class="mo5" for="input15"></label>
-            <input id="input15" name="radio3" type="radio" /> 
+            <input id="input15" name="radio3" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -727,15 +728,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
            <label for="input16" class = "mo1"></label>
-            <input id="input16" name="radio4" type="radio" /> 
+            <input id="input16" name="radio4" type="radio" value ="1"/> 
             <label class = "mo2" for="input17"></label> 
-            <input id="input17" name="radio4" type="radio" />
+            <input id="input17" name="radio4" type="radio" value ="2"/>
             <label class = "mo3" for="input18"></label> 
-            <input id="input18" name="radio4" type="radio" />
+            <input id="input18" name="radio4" type="radio" value ="3"/>
             <label class = "mo4" for="input19"></label>
-            <input id="input19" name="radio4" type="radio" />
+            <input id="input19" name="radio4" type="radio" value ="4"/>
             <label class="mo5" for="input20"></label>
-            <input id="input20" name="radio4" type="radio" /> 
+            <input id="input20" name="radio4" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -751,15 +752,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
             <label for="input21" class = "mo1"></label>
-            <input id="input21" name="radio5" type="radio" /> 
+            <input id="input21" name="radio5" type="radio" value ="1"/> 
             <label class = "mo2" for="input22"></label> 
-            <input id="input22" name="radio5" type="radio" />
+            <input id="input22" name="radio5" type="radio" value ="2"/>
             <label class = "mo3" for="input23"></label> 
-            <input id="input23" name="radio5" type="radio" />
+            <input id="input23" name="radio5" type="radio" value ="3"/>
             <label class = "mo4" for="input24"></label>
-            <input id="input24" name="radio5" type="radio" />
+            <input id="input24" name="radio5" type="radio" value ="4"/>
             <label class="mo5" for="input25"></label>
-            <input id="input25" name="radio5" type="radio" /> 
+            <input id="input25" name="radio5" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -775,15 +776,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
              <label for="input26" class = "mo1"></label>
-            <input id="input26" name="radio6" type="radio" /> 
+            <input id="input26" name="radio6" type="radio" value ="1"/> 
             <label class = "mo2" for="input27"></label> 
-            <input id="input27" name="radio6" type="radio" />
+            <input id="input27" name="radio6" type="radio" value ="2"/>
             <label class = "mo3" for="input28"></label> 
-            <input id="input28" name="radio6" type="radio" />
+            <input id="input28" name="radio6" type="radio" value ="3"/>
             <label class = "mo4" for="input29"></label>
-            <input id="input29" name="radio6" type="radio" />
+            <input id="input29" name="radio6" type="radio" value ="4"/>
             <label class="mo5" for="input30"></label>
-            <input id="input30" name="radio6" type="radio" /> 
+            <input id="input30" name="radio6" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -799,15 +800,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
           <label for="input31" class = "mo1"></label>
-            <input id="input31" name="radio7" type="radio" /> 
+            <input id="input31" name="radio7" type="radio" value ="1"/> 
             <label class = "mo2" for="input32"></label> 
-            <input id="input32" name="radio7" type="radio" />
+            <input id="input32" name="radio7" type="radio" value ="2"/>
             <label class = "mo3" for="input33"></label> 
-            <input id="input33" name="radio7" type="radio" />
+            <input id="input33" name="radio7" type="radio" value ="3"/>
             <label class = "mo4" for="input34"></label>
-            <input id="input34" name="radio7" type="radio" />
+            <input id="input34" name="radio7" type="radio" value ="4"/>
             <label class="mo5" for="input35"></label>
-            <input id="input35" name="radio7" type="radio" /> 
+            <input id="input35" name="radio7" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -823,15 +824,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
             <label for="input36" class = "mo1"></label>
-            <input id="input36" name="radio8" type="radio" /> 
+            <input id="input36" name="radio8" type="radio" value ="1"/> 
             <label class = "mo2" for="input37"></label> 
-            <input id="input37" name="radio8" type="radio" />
+            <input id="input372" name="radio8" type="radio" value ="2"/>
             <label class = "mo3" for="input38"></label> 
-            <input id="input38" name="radio8" type="radio" />
+            <input id="input38" name="radio8" type="radio" value ="3"/>
             <label class = "mo4" for="input39"></label>
-            <input id="input39" name="radio8" type="radio" />
+            <input id="input39" name="radio8" type="radio" value ="4"/>
             <label class="mo5" for="input40"></label>
-            <input id="input40" name="radio8" type="radio" /> 
+            <input id="input40" name="radio8" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -847,15 +848,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
            <label for="input41" class = "mo1"></label>
-            <input id="input41" name="radio9" type="radio" /> 
+            <input id="input41" name="radio9" type="radio" value ="1"/> 
             <label class = "mo2" for="input42"></label> 
-            <input id="input42" name="radio9" type="radio" />
+            <input id="input42" name="radio9" type="radio" value ="2"/>
             <label class = "mo3" for="input43"></label> 
-            <input id="input43" name="radio9" type="radio" />
+            <input id="input43" name="radio9" type="radio" value ="3"/>
             <label class = "mo4" for="input44"></label>
-            <input id="input44" name="radio9" type="radio" />
+            <input id="input44" name="radio9" type="radio" value ="4"/>
             <label class="mo5" for="input45"></label>
-            <input id="input45" name="radio9" type="radio" /> 
+            <input id="input45" name="radio9" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
       </div>
@@ -871,15 +872,15 @@ keyframes input50 { 30%, 70% {
       <div class="in">
          <div class="ab">
             <label for="input46" class = "mo1"></label>
-            <input id="input46" name="radio10" type="radio" /> 
+            <input id="input46" name="radio10" type="radio" value ="1"/> 
             <label class = "mo2" for="input47"></label> 
-            <input id="input47" name="radio10" type="radio" />
+            <input id="input47" name="radio10" type="radio" value ="2"/>
             <label class = "mo3" for="input48"></label> 
-            <input id="input48" name="radio10" type="radio" />
+            <input id="input48" name="radio10" type="radio" value ="3"/>
             <label class = "mo4" for="input49"></label>
-            <input id="input49" name="radio10" type="radio" />
+            <input id="input49" name="radio10" type="radio" value ="4"/>
             <label class="mo5" for="input50"></label>
-            <input id="input50" name="radio10" type="radio" /> 
+            <input id="input50" name="radio10" type="radio" value ="5"/> 
             <span id="slider"></span>
          </div>
          </div>
@@ -890,10 +891,126 @@ keyframes input50 { 30%, 70% {
  
  <div id="btn_group">
   <button onclick="location='survey4.jsp'">이전페이지</button>
-  <button onclick="location='welcome.html'">결과확인</button>
+  <button id = "btn2">결과확인</button>
   </div>
   <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
    <script type="text/javascript">
+   $('#btn2').on('click',function(){
+		
+		var radio41 = Number($('input:radio[name="radio1"]:checked').val());
+		var radio42 = Number($('input:radio[name="radio2"]:checked').val());
+		var radio43 = Number($('input:radio[name="radio3"]:checked').val());
+		var radio44 = Number($('input:radio[name="radio4"]:checked').val());
+		var radio45 = Number($('input:radio[name="radio5"]:checked').val());
+		var radio46 = Number($('input:radio[name="radio6"]:checked').val());
+		var radio47 = Number($('input:radio[name="radio7"]:checked').val());
+		var radio48 = Number($('input:radio[name="radio8"]:checked').val());
+		var radio49 = Number($('input:radio[name="radio9"]:checked').val());
+		var radio50 = Number($('input:radio[name="radio10"]:checked').val());
+		var OPN = radio41+radio42+radio43+radio44+radio45+radio46+radio47+radio48+radio49+radio50;
+		sessionStorage.setItem("radio41", radio41);
+		sessionStorage.setItem("radio42", radio42);
+		sessionStorage.setItem("radio43", radio43);
+		sessionStorage.setItem("radio44", radio44);
+		sessionStorage.setItem("radio45", radio45);
+		sessionStorage.setItem("radio46", radio46);
+		sessionStorage.setItem("radio47", radio47);
+		sessionStorage.setItem("radio48", radio48);
+		sessionStorage.setItem("radio49", radio49);
+		sessionStorage.setItem("radio50", radio50);
+		sessionStorage.setItem("OPN", OPN);
+	
+		var EXT = sessionStorage.getItem("EXT");
+		var EST = sessionStorage.getItem("EST");
+		var AGR = sessionStorage.getItem("AGR");
+		var CSN = sessionStorage.getItem("CSN");
+		
+		var radio1 = Number(sessionStorage.getItem("radio1"));
+		var radio2 = Number(sessionStorage.getItem("radio2"));
+		var radio3 = Number(sessionStorage.getItem("radio3"));
+		var radio4 = Number(sessionStorage.getItem("radio4"));
+		var radio5 = Number(sessionStorage.getItem("radio5"));
+		var radio6 = Number(sessionStorage.getItem("radio6"));
+		var radio7 = Number(sessionStorage.getItem("radio7"));
+		var radio8 = Number(sessionStorage.getItem("radio8"));
+		var radio9 = Number(sessionStorage.getItem("radio9"));
+		var radio10 = Number(sessionStorage.getItem("radio10"));
+		var radio11 = Number(sessionStorage.getItem("radio11"));
+		var radio12 = Number(sessionStorage.getItem("radio12"));
+		var radio13 = Number(sessionStorage.getItem("radio13"));
+		var radio14 = Number(sessionStorage.getItem("radio14"));
+		var radio15 = Number(sessionStorage.getItem("radio15"));
+		var radio16 = Number(sessionStorage.getItem("radio16"));
+		var radio17 = Number(sessionStorage.getItem("radio17"));
+		var radio18 = Number(sessionStorage.getItem("radio18"));
+		var radio19 = Number(sessionStorage.getItem("radio19"));
+		var radio20 = Number(sessionStorage.getItem("radio20"));
+		var radio21 = Number(sessionStorage.getItem("radio21"));
+		var radio22 = Number(sessionStorage.getItem("radio22"));
+		var radio23 = Number(sessionStorage.getItem("radio23"));
+		var radio24 = Number(sessionStorage.getItem("radio24"));
+		var radio25 = Number(sessionStorage.getItem("radio25"));
+		var radio26 = Number(sessionStorage.getItem("radio26"));
+		var radio27 = Number(sessionStorage.getItem("radio27"));
+		var radio28 = Number(sessionStorage.getItem("radio28"));
+		var radio29 = Number(sessionStorage.getItem("radio29"));
+		var radio30 = Number(sessionStorage.getItem("radio30"));
+		var radio31 = Number(sessionStorage.getItem("radio31"));
+		var radio32 = Number(sessionStorage.getItem("radio32"));
+		var radio33 = Number(sessionStorage.getItem("radio33"));
+		var radio34 = Number(sessionStorage.getItem("radio34"));
+		var radio35 = Number(sessionStorage.getItem("radio35"));
+		var radio36 = Number(sessionStorage.getItem("radio36"));
+		var radio37 = Number(sessionStorage.getItem("radio37"));
+		var radio38 = Number(sessionStorage.getItem("radio38"));
+		var radio39 = Number(sessionStorage.getItem("radio39"));
+		var radio40 = Number(sessionStorage.getItem("radio40"));
+		
+		$.ajax({
+			url : "AddResult",
+			type : "post",
+			dataType : "json",
+			data : 
+			'radio1='+radio1+'&radio26='+radio26+
+			'radio2='+radio2+'&radio27='+radio27+
+			'radio3='+radio3+'&radio28='+radio28+
+			'radio4='+radio4+'&radio29='+radio29+
+			'radio5='+radio5+'&radio30='+radio30+
+			'radio6='+radio6+'&radio31='+radio31+
+			'radio7='+radio7+'&radio33='+radio33+
+			'radio8='+radio8+'&radio34='+radio34+
+			'radio9='+radio9+'&radio35='+radio35+
+			'radio10='+radio10+'&radio36='+radio36+
+			'radio11='+radio11+'&radio37='+radio37+
+			'radio12='+radio12+'&radio38='+radio38+
+			'radio13='+radio13+'&radio39='+radio39+
+			'radio14='+radio14+'&radio40='+radio40+
+			'radio15='+radio15+'&radio41='+radio41+
+			'radio16='+radio16+'&radio42='+radio42+
+			'radio17='+radio17+'&radio43='+radio43+
+			'radio18='+radio18+'&radio44='+radio44+
+			'radio19='+radio19+'&radio45='+radio45+
+			'radio20='+radio20+'&radio46='+radio46+
+			'radio21='+radio21+'&radio47='+radio47+
+			'radio22='+radio22+'&radio48='+radio48+
+			'radio23='+radio23+'&radio49='+radio49+
+			'radio24='+radio24+'&radio50='+radio50+
+			'radio25='+radio25+'&radio32='+radio32,
+
+			success : function(result) {
+				console.log("success")
+				}
+			},
+			error : function() {
+
+			}
+		});
+		
+		var url = "http://localhost:9000/re/"+EXT+"/"+EST+"/"+AGR+"/"+CSN+"/"+OPN;
+		$(location).attr('href',url);
+		
+	});
+ 
    
       $('.mo1').on('click',check);
       
