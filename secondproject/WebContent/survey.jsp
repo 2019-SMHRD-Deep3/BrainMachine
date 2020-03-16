@@ -56,6 +56,51 @@ h2 {
 	height: 50px;
 }
 
+.ttt2 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt3 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt4 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt5 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt6 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt7 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt8 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt9 {
+	width: 100%;
+	height: 50px;
+}
+
+.ttt10 {
+	width: 100%;
+	height: 50px;
+}
+
 .ab {
 	width: 100%;
 	height: 100%;
@@ -82,7 +127,8 @@ label {
 	vertical-align: middle;
 }
 
-#slider {
+.slider1 {
+	display: none;
 	position: absolute;
 	left: 0%;
 	/* top: 0; */
@@ -98,253 +144,406 @@ label {
 	transition: 0.2s left .05s ease-in-out;
 }
 
-#input1:checked  ~ #slider {
+.slider2 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider3 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider4 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider5 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider6 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider7 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider8 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider9 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+.slider10 {
+	display: none;
+	position: absolute;
+	left: 0%;
+	/* top: 0; */
+	width: 10%;
+	padding-bottom: 10%;
+	margin: 2.5% 0 0 5%;
+	background: #fff;
+	transition: transform 1s;
+	border-radius: 50%;
+	animation-timing-function: ease-in-out;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	transition: 0.2s left .05s ease-in-out;
+}
+
+#input1:checked  ~ .slider1 {
 	animation-name: input1;
 	left: 0;
 }
 
-#input2:checked  ~ #slider {
+#input2:checked  ~ .slider1 {
 	animation-name: input2;
 	left: 20%;
 }
 
-#input3:checked  ~ #slider {
+#input3:checked  ~ .slider1 {
 	animation-name: input3;
 	left: 40%;
 }
 
-#input4:checked  ~ #slider {
+#input4:checked  ~ .slider1 {
 	animation-name: input4;
 	left: 60%;
 }
 
-#input5:checked  ~ #slider {
+#input5:checked  ~ .slider1 {
 	animation-name: input5;
 	left: 80%;
 }
 
-#input6:checked  ~ #slider {
-	animation-name: input1;
+#input6:checked  ~ .slider2 {
+	animation-name: input6;
 	left: 0;
 }
 
-#input7:checked  ~ #slider {
-	animation-name: input2;
+#input7:checked  ~ .slider2 {
+	animation-name: input7;
 	left: 20%;
 }
 
-#input8:checked  ~ #slider {
-	animation-name: input3;
+#input8:checked  ~ .slider2 {
+	animation-name: input8;
 	left: 40%;
 }
 
-#input9:checked  ~ #slider {
-	animation-name: input4;
+#input9:checked  ~ .slider2 {
+	animation-name: input9;
 	left: 60%;
 }
 
-#input10:checked  ~ #slider {
-	animation-name: input5;
+#input10:checked  ~ .slider2 {
+	animation-name: input10;
 	left: 80%;
 }
 
-#input11:checked  ~ #slider {
-	animation-name: input1;
+#input11:checked  ~ .slider3 {
+	animation-name: input11;
 	left: 0;
 }
 
-#input12:checked  ~ #slider {
-	animation-name: input2;
+#input12:checked  ~ .slider3 {
+	animation-name: input12;
 	left: 20%;
 }
 
-#input13:checked  ~ #slider {
-	animation-name: input3;
+#input13:checked  ~ .slider3 {
+	animation-name: input13;
 	left: 40%;
 }
 
-#input14:checked  ~ #slider {
-	animation-name: input4;
+#input14:checked  ~ .slider3 {
+	animation-name: input14;
 	left: 60%;
 }
 
-#input15:checked  ~ #slider {
-	animation-name: input5;
+#input15:checked  ~ .slider3 {
+	animation-name: input15;
 	left: 80%;
 }
 
-#input16:checked  ~ #slider {
-	animation-name: input1;
+#input16:checked  ~ .slider4 {
+	animation-name: input16;
 	left: 0;
 }
 
-#input17:checked  ~ #slider {
-	animation-name: input2;
+#input17:checked  ~ .slider4 {
+	animation-name: input17;
 	left: 20%;
 }
 
-#input18:checked  ~ #slider {
-	animation-name: input3;
+#input18:checked  ~ .slider4 {
+	animation-name: input18;
 	left: 40%;
 }
 
-#input19:checked  ~ #slider {
-	animation-name: input4;
+#input19:checked  ~ .slider4 {
+	animation-name: input19;
 	left: 60%;
 }
 
-#input20:checked  ~ #slider {
-	animation-name: input5;
+#input20:checked  ~ .slider4 {
+	animation-name: input20;
 	left: 80%;
 }
 
-#input21:checked  ~ #slider {
-	animation-name: input1;
+#input21:checked  ~ .slider5 {
+	animation-name: input21;
 	left: 0;
 }
 
-#input22:checked  ~ #slider {
-	animation-name: input2;
+#input22:checked  ~ .slider5 {
+	animation-name: input22;
 	left: 20%;
 }
 
-#input23:checked  ~ #slider {
-	animation-name: input3;
+#input23:checked  ~ .slider5 {
+	animation-name: input23;
 	left: 40%;
 }
 
-#input24:checked  ~ #slider {
-	animation-name: input4;
+#input24:checked  ~ .slider5 {
+	animation-name: input24;
 	left: 60%;
 }
 
-#input25:checked  ~ #slider {
-	animation-name: input5;
+#input25:checked  ~ .slider5 {
+	animation-name: input25;
 	left: 80%;
 }
 
-#input26:checked  ~ #slider {
-	animation-name: input1;
+#input26:checked  ~ .slider6 {
+	animation-name: input26;
 	left: 0;
 }
 
-#input27:checked  ~ #slider {
-	animation-name: input2;
+#input27:checked  ~ .slider6 {
+	animation-name: input27;
 	left: 20%;
 }
 
-#input28:checked  ~ #slider {
-	animation-name: input3;
+#input28:checked  ~ .slider6 {
+	animation-name: input28;
 	left: 40%;
 }
 
-#input29:checked  ~ #slider {
-	animation-name: input4;
+#input29:checked  ~ .slider6 {
+	animation-name: input29;
 	left: 60%;
 }
 
-#input30:checked  ~ #slider {
-	animation-name: input5;
+#input30:checked  ~ .slider6 {
+	animation-name: input30;
 	left: 80%;
 }
 
-#input31:checked  ~ #slider {
-	animation-name: input1;
+#input31:checked  ~ .slider7 {
+	animation-name: input31;
 	left: 0;
 }
 
-#input32:checked  ~ #slider {
-	animation-name: input2;
+#input32:checked  ~ .slider7 {
+	animation-name: input32;
 	left: 20%;
 }
 
-#input33:checked  ~ #slider {
-	animation-name: input3;
+#input33:checked  ~ .slider7 {
+	animation-name: input33;
 	left: 40%;
 }
 
-#input34:checked  ~ #slider {
-	animation-name: input4;
+#input34:checked  ~ .slider7 {
+	animation-name: input34;
 	left: 60%;
 }
 
-#input35:checked  ~ #slider {
-	animation-name: input5;
+#input35:checked  ~ .slider7 {
+	animation-name: input35;
 	left: 80%;
 }
 
-#input36:checked  ~ #slider {
-	animation-name: input1;
+#input36:checked  ~ .slider8 {
+	animation-name: input36;
 	left: 0;
 }
 
-#input37:checked  ~ #slider {
-	animation-name: input2;
+#input37:checked  ~ .slider8 {
+	animation-name: input37;
 	left: 20%;
 }
 
-#input38:checked  ~ #slider {
-	animation-name: input3;
+#input38:checked  ~ .slider8 {
+	animation-name: input38;
 	left: 40%;
 }
 
-#input39:checked  ~ #slider {
-	animation-name: input4;
+#input39:checked  ~ .slider8 {
+	animation-name: input39;
 	left: 60%;
 }
 
-#input40:checked  ~ #slider {
-	animation-name: input5;
+#input40:checked  ~ .slider8 {
+	animation-name: input40;
 	left: 80%;
 }
 
-#input41:checked  ~ #slider {
-	animation-name: input1;
+#input41:checked  ~ .slider9 {
+	animation-name: input41;
 	left: 0;
 }
 
-#input42:checked  ~ #slider {
-	animation-name: input2;
+#input42:checked  ~ .slider9 {
+	animation-name: input42;
 	left: 20%;
 }
 
-#input43:checked  ~ #slider {
-	animation-name: input3;
+#input43:checked  ~ .slider9 {
+	animation-name: input43;
 	left: 40%;
 }
 
-#input44:checked  ~ #slider {
-	animation-name: input4;
+#input44:checked  ~ .slider9 {
+	animation-name: input44;
 	left: 60%;
 }
 
-#input45:checked  ~ #slider {
-	animation-name: input5;
+#input45:checked  ~ .slider9 {
+	animation-name: input45;
 	left: 80%;
 }
 
-#input46:checked  ~ #slider {
-	animation-name: input1;
+#input46:checked  ~ .slider10 {
+	animation-name: input46;
 	left: 0;
 }
 
-#input47:checked  ~ #slider {
-	animation-name: input2;
+#input47:checked  ~ .slider10 {
+	animation-name: input47;
 	left: 20%;
 }
 
-#input48:checked  ~ #slider {
-	animation-name: input3;
+#input48:checked  ~ .slider10 {
+	animation-name: input48;
 	left: 40%;
 }
 
-#input49:checked  ~ #slider {
-	animation-name: input4;
+#input49:checked  ~ .slider10 {
+	animation-name: input49;
 	left: 60%;
 }
 
-#input50:checked  ~ #slider {
-	animation-name: input5;
+#input50:checked  ~ .slider10 {
+	animation-name: input50;
 	left: 80%;
 }
 
@@ -673,7 +872,7 @@ keyframes input50 { 30%, 70% {
 		총50문항으로 순서대로 답변을 해주시면 됩니다.<br> 질문을 읽은 후 너무 많은 생각을 하기보다는 바로 선택하세요.
 	</h3>
 	<h2>1. 나는 모임을 즐기는 타입이다.</h2>
-	<div class="ttt">
+	<div class="ttt1">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -687,7 +886,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input4"></label> <input id="input4" name="radio1"
 					type="radio" value="4" /> <label class="mo5" for="input5"></label>
 				<input id="input5" name="radio1" type="radio" value="5" /> <span
-					id="slider"></span>
+					class="slider1"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -695,7 +894,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 	<h2>2. 나는 말주변이 없다.</h2>
-	<div class="ttt">
+	<div class="ttt2">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -709,7 +908,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input9"></label> <input id="input9" name="radio2"
 					type="radio" value="4" /> <label class="mo5" for="input10"></label>
 				<input id="input10" name="radio2" type="radio" value="5" /> <span
-					id="slider"></span>
+					class="slider2"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -717,7 +916,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 	<h2>3. 나는 주변에 사람들이 있을 때 마음이 편하다.</h2>
-	<div class="ttt">
+	<div class="ttt3">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -731,7 +930,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input14"></label> <input id="input14"
 					name="radio3" type="radio" value="4" /> <label class="mo5"
 					for="input15"></label> <input id="input15" name="radio3"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider3"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -739,7 +938,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 	<h2>4. 나는 뒤에서 서포트 하는 편이다.</h2>
-	<div class="ttt">
+	<div class="ttt4">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -753,7 +952,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input19"></label> <input id="input19"
 					name="radio4" type="radio" value="4" /> <label class="mo5"
 					for="input20"></label> <input id="input20" name="radio4"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider4"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -761,7 +960,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 	<h2>5. 나는 대화를 시작하는 편이다.</h2>
-	<div class="ttt">
+	<div class="ttt5">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -775,15 +974,15 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input24"></label> <input id="input24"
 					name="radio5" type="radio" value="4" /> <label class="mo5"
 					for="input25"></label> <input id="input25" name="radio5"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider5"></span>
 			</div>
 		</div>
 		<div class="out">
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>6. 나는 말주변이 많은   S 편이 아니다.</h2>
-	<div class="ttt">
+	<h2>6. 나는 말주변이 많은 S 편이 아니다.</h2>
+	<div class="ttt6">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -797,7 +996,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input29"></label> <input id="input29"
 					name="radio6" type="radio" value="4" /> <label class="mo5"
 					for="input30"></label> <input id="input30" name="radio6"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider6"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -805,7 +1004,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 	<h2>7. 나는 모임에서 많은 사람들과 이야기를 나눈다.</h2>
-	<div class="ttt">
+	<div class="ttt7">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -819,7 +1018,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input34"></label> <input id="input34"
 					name="radio7" type="radio" value="4" /> <label class="mo5"
 					for="input35"></label> <input id="input35" name="radio7"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider7"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -827,7 +1026,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 	<h2>8. 나는 집중받는 걸 좋아하지 않는다.</h2>
-	<div class="ttt">
+	<div class="ttt8">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -841,15 +1040,15 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input39"></label> <input id="input39"
 					name="radio8" type="radio" value="4" /> <label class="mo5"
 					for="input40"></label> <input id="input40" name="radio8"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider8"></span>
 			</div>
 		</div>
 		<div class="out">
-			<span class="textagree2">매우그렇다</span>
+			<span class="textagree2">매우그렇다!</span>
 		</div>
 	</div>
 	<h2>9. 나는 집중에 중심되는 걸 꺼려하지 않는다.</h2>
-	<div class="ttt">
+	<div class="ttt9">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -863,7 +1062,7 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input44"></label> <input id="input44"
 					name="radio9" type="radio" value="4" /> <label class="mo5"
 					for="input45"></label> <input id="input45" name="radio9"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider9"></span>
 			</div>
 		</div>
 		<div class="out">
@@ -872,7 +1071,7 @@ keyframes input50 { 30%, 70% {
 	</div>
 
 	<h2>10. 나는 낯선 사람과 있을 때 조용하다.</h2>
-	<div class="ttt">
+	<div class="ttt10">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
 		</div>
@@ -886,14 +1085,14 @@ keyframes input50 { 30%, 70% {
 					class="mo4" for="input49"></label> <input id="input49"
 					name="radio10" type="radio" value="4" /> <label class="mo5"
 					for="input50"></label> <input id="input50" name="radio10"
-					type="radio" value="5" /> <span id="slider"></span>
+					type="radio" value="5" /> <span class="slider10"></span>
 			</div>
 		</div>
 		<div class="out">
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<button  id="btn1" >다음페이지</button>
+	<button id="btn1">다음페이지</button>
 
 	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript">
@@ -953,6 +1152,107 @@ keyframes input50 { 30%, 70% {
 		function check4() {
 			console.log('write4');
 		}
+		
+		
+		$('.ttt1').on('click',bodycheck);
+
+	      
+	      function bodycheck(){
+	         console.log('abd');
+	               
+	                if($('.slider1').css("display") == "none"){   
+	                    $('.slider1').css("display", "block");   
+	                } 
+	      
+	      }
+	      $('.ttt2').on('click',bodycheck2);
+	function bodycheck2(){
+	   console.log('abd2');
+	         
+	         if($('.slider2').css("display") == "none"){   
+	             $('.slider2').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt3').on('click',bodycheck3);
+	function bodycheck3(){
+	   console.log('abd2');
+	         
+	         if($('.slider3').css("display") == "none"){   
+	             $('.slider3').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt4').on('click',bodycheck4);
+	function bodycheck4(){
+	   console.log('abd2');
+	         
+	         if($('.slider4').css("display") == "none"){   
+	             $('.slider4').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt5').on('click',bodycheck5);
+	function bodycheck5(){
+	   console.log('abd2');
+	         
+	         if($('.slider5').css("display") == "none"){   
+	             $('.slider5').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt6').on('click',bodycheck6);
+	function bodycheck6(){
+	   console.log('abd2');
+	         
+	         if($('.slider6').css("display") == "none"){   
+	             $('.slider6').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt7').on('click',bodycheck7);
+	function bodycheck7(){
+	   console.log('abd2');
+	         
+	         if($('.slider7').css("display") == "none"){   
+	             $('.slider7').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt8').on('click',bodycheck8);
+	function bodycheck8(){
+	   console.log('abd2');
+	         
+	         if($('.slider8').css("display") == "none"){   
+	             $('.slider8').css("display", "block");   
+	         }    
+	          
+
+	}
+	      $('.ttt9').on('click',bodycheck9);
+	function bodycheck9(){
+	   console.log('abd2');
+	         
+	         if($('.slider9').css("display") == "none"){   
+	             $('.slider9').css("display", "block");   
+	         }    
+	      $('.ttt10').on('click',bodycheck10);
+	function bodycheck10(){
+	   console.log('abd2');
+	         
+	         if($('.slider10').css("display") == "none"){   
+	             $('.slider10').css("display", "block");   
+	         }    
+	          
+
+	}
+	}
 	</script>
 </body>
 </html>

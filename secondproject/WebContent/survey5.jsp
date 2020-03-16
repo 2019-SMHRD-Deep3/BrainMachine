@@ -895,6 +895,7 @@ keyframes input50 { 30%, 70% {
   </div>
   <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
    <script type="text/javascript">
+  
    $('#btn2').on('click',function(){
 		
 		var radio41 = Number($('input:radio[name="radio1"]:checked').val());
@@ -999,7 +1000,7 @@ keyframes input50 { 30%, 70% {
 
 			success : function(result) {
 				console.log("success")
-				}
+				
 			},
 			error : function() {
 
