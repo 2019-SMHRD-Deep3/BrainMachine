@@ -782,7 +782,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>6. 나는 말주변이 많은 편이 아니다.</h2>
+	<h2>6. 나는 말주변이 많은   S 편이 아니다.</h2>
 	<div class="ttt">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
