@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<!--
+   Hyperspace by HTML5 UP
+   html5up.net | @ajlkn
+   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<style type="text/css">
+.toptop {
+	margin: 5% 0 50%;
+}
+
+#allview {
+	width: 100%;
+	text-align: center;
+}
+
+#view {
+	width: 100%;
+	text-align: center;
+	margin: 0px auto;
+	height: 500px;
+	overflow: auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+
+li {
+	text-align: left;
+}
+
+span {
+	color: blue;
+}
+
+#container {
+	width: 300px;
+	height: 300px;
+}
+
+#asdf {
+	padding-top: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#qwer {
+	padding-bottom: 0px;
+	padding-top: 0px;
+	text-align: left;
+	border: 0px;
+}
+
+#zxcv {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: left;
+	border: 0px;
+}
+</style>
+<title>asdf</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../assets2/css/main2.css" />
+<noscript>
+	<link rel="stylesheet" href="../assets2/css/noscript2.css" />
+</noscript>
+</head>
+<body class="is-preload">
+
+<script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+		
+		var sch = location.search;
+		var params = new URLSearchParams(sch);
+		var result3 = params.get('result3');
+
+		window.onload = pageLoad;
+		function pageLoad() {
+			setTimeout(function() {
+				var t = document.getElementsByTagName('tspan')
+				t[13].innerHTML = "";
+
+			}, 3000);
+		};
+		
+		</script>
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<!--  <li><a href="#intro">Welcome</a></li> -->
+					<li><a href="#one" id = "t1"></a></li>
+					<li><a href="#two">나라별여행지</a></li>
+
+					<!-- <li><a href="#two">What we do</a></li> -->
+					<li><a href="#three">게시글</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	
+ 
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<!--    <section id="intro" class="wrapper style1 fullscreen fade-up">
+         <div class="inner">
+            <h1 class = "toptop">당신의 성향은 ? 이고 당신의 여행지는 ?</h1>
+         
+            <p margin= "10%"> 개방성 외향성</p>
+            <ul class="actions">
+               <li><a href="#one" class="button scrolly">Learn more</a></li>
+            </ul>
+         </div>
+      </section> -->
+
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="mexico_image/cancun.jpg" alt=""
+					data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>해변산책 및 서핑</h2>
+						<p>칸쿤</p>
+						<ul class="actions">
+							<li><a href="generic_mexico_type_2_1.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="mexico_image/hidden.jpg" alt=""
+					data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>히든비치</h2>
+						<p>마리에타섬</p>
+						<ul class="actions">
+							<li><a href="generic_mexico_type_2_2.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+		</section>
+
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h3>마커를 클릭해 성향에 맞는 전세계 여행지 구경하기</h3>
+				<script type="text/javascript" src="../mapdata.js"></script>
+				<script type="text/javascript" src="../worldmap.js"></script>
+				<br>
+				<div id="map"></div>
+			</div>
+		</section>
+		<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis
+               aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam
+               dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit
+               amet imperdiet est velit quis lorem.</p>
+            <div class="features">
+               <section>
+                  <span class="icon solid major fa-code"></span>
+                  <h3>Lorem ipsum amet</h3>
+                  <p>Phasellus convallis elit id ullam corper amet et pulvinar.
+                     Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+               </section>
+               <section>
+                  <span class="icon solid major fa-lock"></span>
+                  <h3>Aliquam sed nullam</h3>
+                  <p>Phasellus convallis elit id ullam corper amet et pulvinar.
+                     Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+               </section>
+               <section>
+                  <span class="icon solid major fa-cog"></span>
+                  <h3>Sed erat ullam corper</h3>
+                  <p>Phasellus convallis elit id ullam corper amet et pulvinar.
+                     Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+               </section>
+               <section>
+                  <span class="icon solid major fa-desktop"></span>
+                  <h3>Veroeros quis lorem</h3>
+                  <p>Phasellus convallis elit id ullam corper amet et pulvinar.
+                     Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+               </section>
+               <section>
+                  <span class="icon solid major fa-link"></span>
+                  <h3>Urna quis bibendum</h3>
+                  <p>Phasellus convallis elit id ullam corper amet et pulvinar.
+                     Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+               </section>
+               <section>
+                  <span class="icon major fa-gem"></span>
+                  <h3>Aliquam urna dapibus</h3>
+                  <p>Phasellus convallis elit id ullam corper amet et pulvinar.
+                     Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+               </section>
+            </div>
+            <ul class="actions">
+               <li><a href="generic2.html" class="button">Learn more</a></li>
+            </ul>
+         </div>-->
+
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>게시글</h2>
+				<p>당신의 성향을 입력해봐요.</p>
+				<!--    <div class="split style1"> -->
+
+
+<div id="allview">
+<div id="view">
+						<table id="list">
+						
+							
+						</table>
+						<script src="../js/jquery-3.4.1.min.js"></script>
+							
+							<script type="text/javascript">
+								console.log("tttttttt: "+ sessionStorage.getItem("nation"));
+								
+								$.ajax({
+											url : "../SelectChat",
+											type : "post",
+											dataType : "json",
+											data :  '',
+
+											success : function(result) {
+											
+												for (var i = result.length - 1; i >= 0; i--) {
+													var flag = result[i].nation;
+													var url = 's';
+
+													console.log(result[i]);
+
+													if (flag == "영국") {
+														url = "../flag/england.jpg";
+													} else if (flag == "독일") {
+														url = "../flag/germany.png";
+
+													} else if (flag == "말레이시아") {
+														url = "../flag/malaysia.png";
+
+													} else if (flag == "아랍에미리트") {
+														url = "../flag/ArabEmirates.svg";
+
+													} else if (flag == "남아공") {
+														url = "../flag/south-africa.png";
+
+													} else if (flag == "케냐") {
+														url = "../flag/kenya.png";
+
+													} else if (flag == "인도") {
+														url = "../flag/india.png";
+
+													} else if (flag == "파키스탄") {
+														url = "../flag/pakistan.png";
+
+													} else if (flag == "홍콩") {
+														url = "../flag/hong-kong.png";
+
+													} else if (flag == "일본") {
+														url = "../flag/japan.png";
+
+													} else if (flag == "싱가포르") {
+														url = "../flag/singapore-.png";
+
+													} else if (flag == "인도네시아") {
+														url = "../flag/Indonesia.svg";
+
+													} else if (flag == "호주") {
+														url = "../flag/australia.png";
+
+													} else if (flag == "캐나다") {
+														url = "../flag/canada.png";
+													} else if (flag == "멕시코") {
+														url = "../flag/mexico.png";
+													} else if (flag == "브라질") {
+														url = "../flag/brazile.png";
+													} else if (flag == "러시아") {
+														url = "../flag/russia.png";
+													} else if (flag == "폴란드") {
+														url = "../flag/poland.png";
+													} else if (flag == "뉴질랜드") {
+														url = "../flag/new-zealand.png";
+													} else if (flag == "미국") {
+														url = "../flag/usa.jpg";
+													}
+													var item = '<tr><td rowspan = "2" id = "asdf" width = "20px"> <br> <img src = '+url+' height = "60px"> <br> </td><td id = "qwer"> <br>'
+															+ result[i].id
+															+ '</td></tr><tr><td id = "zxcv">'
+															+ result[i].content
+															+ '</td></tr>';
+													$('#list:last').append(item);
+												}
+											},
+											error : function() {
+
+											}
+										});
+							</script>
+					</div>
+					<table border="none">
+						<tr>
+							<td><input type="text" placeholder="ID를 입력하세요!"
+								style="width: 300px; height: 2.75em;" id="id2">
+							<td />
+							<td><input type="text" placeholder="내용을 입력하세요!"
+								style="width: 500px; height: 2.75em;" id="content2"></td>
+						</tr>
+
+					</table>
+					<button id="btn">입력</button>
+
+				</div>
+				
+				<script type="text/javascript">
+					$('#btn').on('click', play);
+
+					/* setInterval(play, 2000); */
+					function play() {
+						$('#list').empty();
+						console.log("★★★★★★★★")
+						var id = $('#id2').val();
+						var content = $('#content2').val();
+						var nation = sessionStorage.getItem("nation");
+
+						console.log(nation);
+						$('#id2').val('');
+						$('#content2').val('');
+						$('#id2').focus();
+
+						$.ajax({
+									url : "../AddChat",
+									type : "post",
+									dataType : "json",
+									data : 'id=' + id + '&content=' + content
+											+ '&nation=' + nation,
+
+									success : function(result) {
+
+										for (var i = result.length - 1; i >= 0; i--) {
+											var flag = result[i].nation;
+											var url = 's';
+
+											console.log(result[i]);
+
+											if (flag == "영국") {
+												url = "../flag/england.jpg";
+											} else if (flag == "독일") {
+												url = "../flag/germany.png";
+
+											} else if (flag == "말레이시아") {
+												url = "../flag/malaysia.png";
+
+											} else if (flag == "아랍에미리트") {
+												url = "../flag/ArabEmirates.svg";
+
+											} else if (flag == "남아공") {
+												url = "../flag/south-africa.png";
+
+											} else if (flag == "케냐") {
+												url = "../flag/kenya.png";
+
+											} else if (flag == "인도") {
+												url = "../flag/india.png";
+
+											} else if (flag == "파키스탄") {
+												url = "../flag/pakistan.png";
+
+											} else if (flag == "홍콩") {
+												url = "../flag/hong-kong.png";
+
+											} else if (flag == "일본") {
+												url = "../flag/japan.png";
+
+											} else if (flag == "싱가포르") {
+												url = "../flag/singapore-.png";
+
+											} else if (flag == "인도네시아") {
+												url = "../flag/Indonesia.svg";
+
+											} else if (flag == "호주") {
+												url = "../flag/australia.png";
+
+											} else if (flag == "캐나다") {
+												url = "../flag/canada.png";
+											} else if (flag == "멕시코") {
+												url = "../flag/mexico.png";
+											} else if (flag == "브라질") {
+												url = "../flag/brazile.png";
+											} else if (flag == "러시아") {
+												url = "../flag/russia.png";
+											} else if (flag == "폴란드") {
+												url = "../flag/poland.png";
+											} else if (flag == "뉴질랜드") {
+												url = "../flag/new-zealand.png";
+											} else if (flag == "미국") {
+												url = "../flag/usa.jpg";
+											}
+											var item = '<tr><td rowspan = "2" id = "asdf" width = "20px"> <br> <img src = '+url+' height = "60px"> <br> </td><td id = "qwer"> <br>'
+													+ result[i].id
+													+ '</td></tr><tr><td id = "zxcv">'
+													+ result[i].content
+													+ '</td></tr>';
+											$('#list:last').append(item);
+										}
+									},
+									error : function() {
+
+									}
+								});
+
+					}
+				</script>
+
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+	
+	<script type="text/javascript">
+		document.getElementById("t1").innerHTML = "감각 추구 여행자"; 
+	</script>
+	
+	<!-- Scripts -->
+	<script src="../assets2/js/jquery.min2.js?ver1"></script>
+	<script src="../assets2/js/jquery.scrollex.min2.js?ver1"></script>
+	<script src="../assets2/js/jquery.scrolly.min2.js?ver1"></script>
+	<script src="../assets2/js/browser.min2.js?ver1"></script>
+	<script src="../assets2/js/breakpoints.min2.js?ver1"></script>
+	<script src="../assets2/js/util2.js?ver1"></script>
+	<script src="../assets2/js/main2.js?ver1"></script>
+
+</body>
+</html>
