@@ -1,14 +1,18 @@
 drop table chat;
-
+drop table REPORT;
 
 
 create table chat(
    id varchar2(100),
-   content varchar2(1000)
+   content varchar2(1000),
+   nation varchar2(30)
 )
 
 CREATE TABLE REPORT 
-   (   EXT1 VARCHAR2(50 BYTE) NOT NULL, 
+   ( 
+   sex number not null,
+   age number not null,
+   EXT1 VARCHAR2(50 BYTE) NOT NULL, 
    EXT2 VARCHAR2(50 BYTE) NOT NULL, 
    EXT3 VARCHAR2(50 BYTE) NOT NULL, 
    EXT4 VARCHAR2(50 BYTE) NOT NULL, 
@@ -62,5 +66,15 @@ CREATE TABLE REPORT
    
    
    select * from report;
+   select * from chat;
+   
+   insert into chat values('sj','☆저랑 함께 떠나실 분 구함☆','말레이시아');
+   insert into chat values('mmin','영국이라니~ 역시 제 2의 고향이네요','영국');
+   insert into chat values('jun','와~딱이네요','러시아');
+   insert into chat values('bae','당장 호주로 떠나야겠어요','호주');
+   insert into chat values('kim','앗살람말레이쿵','파키스탄');
+   
+
+
    
    

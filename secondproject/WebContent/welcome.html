@@ -6,57 +6,215 @@
 -->
 <html>
 <head>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean" rel="stylesheet">
+
 <style>
-.toptop{
-margin:5% 0 30%;
+.toptop {
+	margin: 5% 0 9%;
+	font-family: 'Jua', sans-serif;
+	text-align :center !important; 
+}
+
+#st {
+	margin-left: 222%;
+	margint-top: 0;
+}
+
+#canvas{
+	position :relative !important; 
+	left : 30% !important;
+	
+	
 }
 </style>
 <title>asdf</title>
 <meta charset="utf-8" />
 <meta name="viewport"
-   content="width=device-width, initial-scale=1, user-scalable=no" />
+	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets2/css/main2.css" />
 <noscript>
-   <link rel="stylesheet" href="assets2/css/noscript2.css" />
+	<link rel="stylesheet" href="assets2/css/noscript2.css" />
 </noscript>
+
 </head>
 <body class="is-preload">
 
-   <!-- Sidebar -->
-   <section id="sidebar">
-      <div class="inner">
-         <nav>
-            <ul>
-               <li><a href="#intro">Welcome</a></li>
-             
-            </ul>
-         </nav>
-      </div>
-   </section>
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
 
-   <!-- Wrapper -->
-   <div id="wrapper">
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-      <!-- Intro -->
-      <section id="intro" class="wrapper style1 fullscreen fade-up">
-         <div class="inner">
-            <h1 class = "toptop">외향성의 특징이 강한 당신에게 추천하는 여행지는 미국입니다.</h1>
-   
-            <p margin= "10%"> 미국사진</p>
-            <ul class="actions">
-               <li><a href="main2.html" class="button scrolly">Learn more</a></li>
-            </ul>
-         </div>
-      </section>
-      </div>
-      <!-- Scripts -->
-   <script src="assets2/js/jquery.min2.js?ver1"></script>
-   <script src="assets2/js/jquery.scrollex.min2.js?ver1"></script>
-   <script src="assets2/js/jquery.scrolly.min2.js?ver1"></script>
-   <script src="assets2/js/browser.min2.js?ver1"></script>
-   <script src="assets2/js/breakpoints.min2.js?ver1"></script>
-   <script src="assets2/js/util2.js?ver1"></script>
-   <script src="assets2/js/main2.js?ver1"></script>
-      
-      </body>
-      </html>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			var sch = location.search;
+			var params = new URLSearchParams(sch);
+			var result = params.get('result');
+			var result2 = params.get('result2');
+			var result3 = params.get('result3');
+			sessionStorage.setItem("nation", result);
+		</script>
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<script
+					src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+				<div style="width: 500px; height: 500px;" id = "canvas">
+
+					<!-- <div id= "hide"></div> -->
+
+					<canvas id="myChart" width="500px" height="500px"
+						style="background-color: snow;"></canvas>
+
+				</div>
+
+				<script>
+					var ctx = document.getElementById('myChart');
+
+					var canvas = document.querySelector('canvas');
+
+					var options = {
+
+						scale : {
+
+							ticks : {
+
+								suggestedMin : 10,
+
+								suggestedMax : 50
+
+							},
+
+							fontSize : "100px"
+
+						}
+
+					};
+
+					function fitToCintainer(canvas) {
+
+						canvas.style.width = "100%";
+
+						canvas.style.height = "100%";
+
+						canvas.width = canvas.offsetWidth;
+
+						canvas.height = canvas.offsetHeight;
+
+					}
+
+					var EXT = sessionStorage.getItem("EXT");
+
+					var EST = sessionStorage.getItem("EST");
+
+					var AGR = sessionStorage.getItem("AGR");
+
+					var CSN = sessionStorage.getItem("CSN");
+
+					var OPN = sessionStorage.getItem("OPN");
+
+					fitToCintainer(canvas);
+
+					var myChart = new Chart(
+							ctx,
+							{
+
+								type : 'radar',
+
+								data : {
+
+									labels : [ '외향성 ', '개방성 ', '신경성 ', '성실성 ',
+											'친화성 ' ],
+
+									datasets : [ {
+
+										fillColor : "blue",
+
+										data : [ EXT, EST, AGR, CSN, OPN ],
+
+										label : '',
+
+										backgroundColor : 'rgba(63, 0, 153, 0.3)',
+
+										pointBackgroundColor : '#FFB2D',
+
+										pointBorderColor : '#FFB2D',
+
+										pointBorderWidth : '#FFB2D',
+
+										pointHitRadius : '#FFB2D',
+
+										pointRadius : '1.7',
+
+										borderColor : '#FFB2D',
+
+										borderWidth : '5px',
+
+										spanGaps : 'True',
+
+										pointHoverBackgroundColor : '#FF0000'
+
+									} ]
+
+								},
+
+								options : options
+
+							});
+				</script>
+				<h1 class="toptop" text-align = "center">
+					<!-- "<span id="t1"></span>" -->당신에게 추천하는 여행지는 "<span
+						id="t2"></span>"입니다.
+				</h1>
+	
+				<ul class="actions">
+					<li><a href="main2.html?result3" class="button scrolly"
+						id="st"> Learn more</a></li>
+				</ul>
+			</div>
+		</section>
+		<script type="text/javascript">
+			document.getElementById("t2").innerHTML = result;
+			document.getElementById("t1").innerHTML = result2;
+
+			$(document).ready(
+					function() {
+
+						$("#st")
+								.append(
+										"<a href='main2.html?result3="
+												+ result3 + "'>");
+						document.getElementById('st').setAttribute('href',
+								'main2.html?result3=' + result3)
+
+					});
+		</script>
+	</div>
+	<!-- Scripts -->
+	<script src="assets2/js/jquery.min2.js?ver1"></script>
+	<script src="assets2/js/jquery.scrollex.min2.js?ver1"></script>
+	<script src="assets2/js/jquery.scrolly.min2.js?ver1"></script>
+	<script src="assets2/js/browser.min2.js?ver1"></script>
+	<script src="assets2/js/breakpoints.min2.js?ver1"></script>
+	<script src="assets2/js/util2.js?ver1"></script>
+	<script src="assets2/js/main2.js?ver1"></script>
+
+</body>
+</html>

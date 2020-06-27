@@ -37,7 +37,7 @@
 					// Images (in the format of 'url': 'alignment').
 						images: {
 							
-							'images/bg03.jpg': 'center'
+							'images/bg01.jpg': 'center'
 						},
 
 					// Delay.
@@ -158,7 +158,7 @@
 								$submit.disabled = false;
 
 							// Show message.
-								$message._show('success', 'Thank you!');
+								$message._show('success', 'Thanks!');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
 						}, 750);

@@ -14,6 +14,23 @@
 <meta name="viewport"
    content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean"
+	rel="stylesheet">
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+
+<style>
+.tripBtn{
+	background-color: #f44336;
+}
+h1{
+font-family: 'Noto Sans KR', sans-serif;
+}
+p{
+font-family: 'Jua', sans-serif;
+}
+</style>
 </head>
 <body class="is-preload">
 
@@ -22,31 +39,69 @@
       <h1>성향에 맞는 나의 여행지 찾기</h1>
       <p>우리가 여행을 떠나는 이유와 만족을 느끼는 여행의 양상은 
  내가 어떤 사람인가에 따라 달라진다.<br> 우리가 자신에 대해 깊이 생각할 기회를 
- 얻는다면 누구나 행복한 여행을 꿈꾸고 구현할 수 있다.20.03.14 15:08pm </p>
+ 얻는다면 누구나 행복한 여행을 꿈꾸고 구현할 수 있다. </p>
    </header>
 
    <!-- Signup Form -->
-   <form id="signup-form" method="post" action="survey.jsp">
-      <input type="submit" value="시작하기" id="pro" />
+   <!-- <table text-align = "left">
+		<tr>
+		<td></td>
+		<td></td>
+		
+			<td align="right">나이 :&nbsp&nbsp</td>
+			<td></td>
+			
+			<td colspan = "2" width="100"><input type="text" id = "name"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			</tr><tr><td width="60" align="left" >성별 :    </td>
+			<td width="10%">남&nbsp&nbsp<input type="button" name="gender" val=1
+				class="tripBtn bbtn" ></td>
+			<td>여&nbsp&nbsp<input type="button" name="gender" val=2 class="tripBtn bbtn"></td>
+		</tr>
+</table> -->
+     <form id="signup-form" method="post" action="pop.jsp">
+      <input type="button" value="시작하기" onclick="showPopup();" id="pro" />
    </form>
 
   
-   <script type="text/javascript">
+ <!--   <script type="text/javascript">
       $('#pro').on('click', timeCheck);
 
       function timeCheck() {
          setTimeout(function() {
             location.href = 'survey.jsp';
-         },1000);
+         },3000); 
+       
       }
+  	var trip_type;
+
+	$('.tripBtn').on('click', function() {
+		$('.tripBtn').css('background-color', '');
+		$(this).css('background-color', 'yellow');
+		trip_type = "성별_" + $(this).attr('val');
+		$(this).css('value', trip_type);
+
+	});
       
-   </script>
+   </script> -->
 
    <!-- Footer -->
    <footer id="footer"> </footer>
 
    <!-- Scripts -->
    <script src="assets/js/main.js?ver1"></script>
+	<script language="javascript">
+   function showPopup() {
+	   $("#pro").fadeOut();
+      window.open("pop.jsp", "a", "width=500, height=160, left=720, top=100");
+      
 
+   }
+
+</script>
 </body>
 </html>

@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link
+	href="https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean"
+	rel="stylesheet">
 <style>
 .out {
 	width: 30%;
@@ -19,15 +22,36 @@
 }
 
 body {
-	background: cadetblue;
+	background: steelblue;
 	color: #fff;
 	padding-bottom: 10%;
 }
 
-h2 {
+.btn {
+	background-color: white;
+	padding: 15px 30px;
+	margin: 6%;
+	border: none;
+	color: black;
 	text-align: center;
-	margin: 8% 0 5%;
-	font-family: verdana;
+	text-decoration: none;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	font-family: 'Jua', sans-serif;
+}
+
+.btn1:hover {
+	background-color: skyblue;
+	color: white;
+}
+
+h2 {
+	font-family: 'Jua', sans-serif;
+	text-align: center;
+	margin: 8% 0 1%;
 	font-weight: 50;
 }
 
@@ -43,15 +67,17 @@ h2 {
 	text-align: right;
 	display: table-cell;
 	vertical-align: middle;
+	font-family: 'Jua', sans-serif;
 }
 
 .textagree2 {
 	text-align: left;
 	display: table-cell;
 	vertical-align: middle;
+	font-family: 'Jua', sans-serif;
 }
 
-.ttt {
+.ttt1 {
 	width: 100%;
 	height: 50px;
 }
@@ -865,13 +891,13 @@ keyframes input50 { 30%, 70% {
 
 </head>
 <body>
-	<h1>
+	<h1 id="0">
 		<strong>BIG 5 테스트</strong>
 	</h1>
-	<h3>
+	<h3 >
 		총50문항으로 순서대로 답변을 해주시면 됩니다.<br> 질문을 읽은 후 너무 많은 생각을 하기보다는 바로 선택하세요.
 	</h3>
-	<h2>1. 나는 모임을 즐기는 타입이다.</h2>
+	<h2 id="1">1. 나는 모임을 즐기는 타입이다.</h2>
 	<div class="ttt1">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -893,7 +919,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>2. 나는 말주변이 없다.</h2>
+	<h2 id="2">2. 나는 말주변이 없다.</h2>
 	<div class="ttt2">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -915,7 +941,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>3. 나는 주변에 사람들이 있을 때 마음이 편하다.</h2>
+	<h2 id="3">3. 나는 주변에 사람들이 있을 때 마음이 편하다.</h2>
 	<div class="ttt3">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -937,7 +963,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>4. 나는 뒤에서 서포트 하는 편이다.</h2>
+	<h2 id="4">4. 나는 뒤에서 서포트 하는 편이다.</h2>
 	<div class="ttt4">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -959,7 +985,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>5. 나는 대화를 시작하는 편이다.</h2>
+	<h2 id="5">5. 나는 대화를 시작하는 편이다.</h2>
 	<div class="ttt5">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -981,7 +1007,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>6. 나는 말주변이 많은 S 편이 아니다.</h2>
+	<h2 id="6">6. 나는 말주변이 많은 편이 아니다.</h2>
 	<div class="ttt6">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -1003,7 +1029,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>7. 나는 모임에서 많은 사람들과 이야기를 나눈다.</h2>
+	<h2 id="7">7. 나는 모임에서 많은 사람들과 이야기를 나눈다.</h2>
 	<div class="ttt7">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -1025,7 +1051,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<h2>8. 나는 집중받는 걸 좋아하지 않는다.</h2>
+	<h2 id="8">8. 나는 집중받는 걸 좋아하지 않는다.</h2>
 	<div class="ttt8">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -1047,7 +1073,7 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다!</span>
 		</div>
 	</div>
-	<h2>9. 나는 집중에 중심되는 걸 꺼려하지 않는다.</h2>
+	<h2 id="9">9. 나는 집중에 중심되는 걸 꺼려하지 않는다.</h2>
 	<div class="ttt9">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -1070,7 +1096,7 @@ keyframes input50 { 30%, 70% {
 		</div>
 	</div>
 
-	<h2>10. 나는 낯선 사람과 있을 때 조용하다.</h2>
+	<h2 id="10">10. 나는 낯선 사람과 있을 때 조용하다.</h2>
 	<div class="ttt10">
 		<div class="out">
 			<span class="textagree">전혀 일치하지 않는다</span>
@@ -1092,41 +1118,77 @@ keyframes input50 { 30%, 70% {
 			<span class="textagree2">매우그렇다</span>
 		</div>
 	</div>
-	<button id="btn1">다음페이지</button>
+	<button class="btn btn1">다음페이지</button>
 
 	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript">
-	
-		$('#btn1').on('click',function(){
-			
-			var radio1 = Number($('input:radio[name="radio1"]:checked').val());
-			var radio2 = Number($('input:radio[name="radio2"]:checked').val());
-			var radio3 = Number($('input:radio[name="radio3"]:checked').val());
-			var radio4 = Number($('input:radio[name="radio4"]:checked').val());
-			var radio5 = Number($('input:radio[name="radio5"]:checked').val());
-			var radio6 = Number($('input:radio[name="radio6"]:checked').val());
-			var radio7 = Number($('input:radio[name="radio7"]:checked').val());
-			var radio8 = Number($('input:radio[name="radio8"]:checked').val());
-			var radio9 = Number($('input:radio[name="radio9"]:checked').val());
-			var radio10 = Number($('input:radio[name="radio10"]:checked').val());
-			var EXT = radio1+radio2+radio3+radio4+radio5+radio6+radio7+radio8+radio9+radio10;
-			sessionStorage.setItem("radio1", radio1);
-			sessionStorage.setItem("radio2", radio2);
-			sessionStorage.setItem("radio3", radio3);
-			sessionStorage.setItem("radio4", radio4);
-			sessionStorage.setItem("radio5", radio5);
-			sessionStorage.setItem("radio6", radio6);
-			sessionStorage.setItem("radio7", radio7);
-			sessionStorage.setItem("radio8", radio8);
-			sessionStorage.setItem("radio9", radio9);
-			sessionStorage.setItem("radio10", radio10);
-			sessionStorage.setItem("EXT", EXT);
-			
-			$(location).attr('href','survey2.jsp');
-		});
-		
-	
-	
+		$('.btn1').on(
+				'click',
+				function() {
+
+					var radio1 = Number($('input:radio[name="radio1"]:checked')
+							.val());
+					var radio2 = Number($('input:radio[name="radio2"]:checked')
+							.val());
+					var radio3 = Number($('input:radio[name="radio3"]:checked')
+							.val());
+					var radio4 = Number($('input:radio[name="radio4"]:checked')
+							.val());
+					var radio5 = Number($('input:radio[name="radio5"]:checked')
+							.val());
+					var radio6 = Number($('input:radio[name="radio6"]:checked')
+							.val());
+					var radio7 = Number($('input:radio[name="radio7"]:checked')
+							.val());
+					var radio8 = Number($('input:radio[name="radio8"]:checked')
+							.val());
+					var radio9 = Number($('input:radio[name="radio9"]:checked')
+							.val());
+					var radio10 = Number($(
+							'input:radio[name="radio10"]:checked').val());
+
+					var array = [ radio1, radio2, radio3, radio4, radio5,
+							radio6, radio7, radio8, radio9, radio10 ];
+					var EXT = radio1 + radio2 + radio3 + radio4 + radio5
+							+ radio6 + radio7 + radio8 + radio9 + radio10;
+					sessionStorage.setItem("radio1", radio1);
+					sessionStorage.setItem("radio2", radio2);
+					sessionStorage.setItem("radio3", radio3);
+					sessionStorage.setItem("radio4", radio4);
+					sessionStorage.setItem("radio5", radio5);
+					sessionStorage.setItem("radio6", radio6);
+					sessionStorage.setItem("radio7", radio7);
+					sessionStorage.setItem("radio8", radio8);
+					sessionStorage.setItem("radio9", radio9);
+					sessionStorage.setItem("radio10", radio10);
+					sessionStorage.setItem("EXT", EXT);
+
+					var offset = 's';
+
+					for (var i = 1; i <= 10; i++) {
+						if (isNaN(array[i - 1])) {
+							$('#' + i).css("color", "#F4FA58");
+						} else {
+							$('#' + i).css("color", "white");
+						}
+					}
+
+					for (var i = 0; i < array.length; i++) {
+						if (isNaN(array[i])) {
+							offset = $("#" + i).offset();
+							$('html,body').animate({
+								scrollTop : offset.top
+							}, 400);
+							break;
+						}
+						if (i == array.length - 1) {
+
+							$(location).attr('href', 'survey2.jsp');
+						}
+					}
+
+				});
+
 		$('.mo1').on('click', check);
 
 		function check() {
@@ -1152,107 +1214,97 @@ keyframes input50 { 30%, 70% {
 		function check4() {
 			console.log('write4');
 		}
-		
-		
-		$('.ttt1').on('click',bodycheck);
 
-	      
-	      function bodycheck(){
-	         console.log('abd');
-	               
-	                if($('.slider1').css("display") == "none"){   
-	                    $('.slider1').css("display", "block");   
-	                } 
-	      
-	      }
-	      $('.ttt2').on('click',bodycheck2);
-	function bodycheck2(){
-	   console.log('abd2');
-	         
-	         if($('.slider2').css("display") == "none"){   
-	             $('.slider2').css("display", "block");   
-	         }    
-	          
+		$('.ttt1').on('click', bodycheck);
 
-	}
-	      $('.ttt3').on('click',bodycheck3);
-	function bodycheck3(){
-	   console.log('abd2');
-	         
-	         if($('.slider3').css("display") == "none"){   
-	             $('.slider3').css("display", "block");   
-	         }    
-	          
+		function bodycheck() {
+			console.log('abd');
 
-	}
-	      $('.ttt4').on('click',bodycheck4);
-	function bodycheck4(){
-	   console.log('abd2');
-	         
-	         if($('.slider4').css("display") == "none"){   
-	             $('.slider4').css("display", "block");   
-	         }    
-	          
+			if ($('.slider1').css("display") == "none") {
+				$('.slider1').css("display", "block");
+			}
 
-	}
-	      $('.ttt5').on('click',bodycheck5);
-	function bodycheck5(){
-	   console.log('abd2');
-	         
-	         if($('.slider5').css("display") == "none"){   
-	             $('.slider5').css("display", "block");   
-	         }    
-	          
+		}
+		$('.ttt2').on('click', bodycheck2);
+		function bodycheck2() {
+			console.log('abd2');
 
-	}
-	      $('.ttt6').on('click',bodycheck6);
-	function bodycheck6(){
-	   console.log('abd2');
-	         
-	         if($('.slider6').css("display") == "none"){   
-	             $('.slider6').css("display", "block");   
-	         }    
-	          
+			if ($('.slider2').css("display") == "none") {
+				$('.slider2').css("display", "block");
+			}
 
-	}
-	      $('.ttt7').on('click',bodycheck7);
-	function bodycheck7(){
-	   console.log('abd2');
-	         
-	         if($('.slider7').css("display") == "none"){   
-	             $('.slider7').css("display", "block");   
-	         }    
-	          
+		}
+		$('.ttt3').on('click', bodycheck3);
+		function bodycheck3() {
+			console.log('abd2');
 
-	}
-	      $('.ttt8').on('click',bodycheck8);
-	function bodycheck8(){
-	   console.log('abd2');
-	         
-	         if($('.slider8').css("display") == "none"){   
-	             $('.slider8').css("display", "block");   
-	         }    
-	          
+			if ($('.slider3').css("display") == "none") {
+				$('.slider3').css("display", "block");
+			}
 
-	}
-	      $('.ttt9').on('click',bodycheck9);
-	function bodycheck9(){
-	   console.log('abd2');
-	         
-	         if($('.slider9').css("display") == "none"){   
-	             $('.slider9').css("display", "block");   
-	         }    
-	      $('.ttt10').on('click',bodycheck10);
-	function bodycheck10(){
-	   console.log('abd2');
-	         
-	         if($('.slider10').css("display") == "none"){   
-	             $('.slider10').css("display", "block");   
-	         }    
-	          
+		}
+		$('.ttt4').on('click', bodycheck4);
+		function bodycheck4() {
+			console.log('abd2');
 
-	}
-	}
+			if ($('.slider4').css("display") == "none") {
+				$('.slider4').css("display", "block");
+			}
+
+		}
+		$('.ttt5').on('click', bodycheck5);
+		function bodycheck5() {
+			console.log('abd2');
+
+			if ($('.slider5').css("display") == "none") {
+				$('.slider5').css("display", "block");
+			}
+
+		}
+		$('.ttt6').on('click', bodycheck6);
+		function bodycheck6() {
+			console.log('abd2');
+
+			if ($('.slider6').css("display") == "none") {
+				$('.slider6').css("display", "block");
+			}
+
+		}
+		$('.ttt7').on('click', bodycheck7);
+		function bodycheck7() {
+			console.log('abd2');
+
+			if ($('.slider7').css("display") == "none") {
+				$('.slider7').css("display", "block");
+			}
+
+		}
+		$('.ttt8').on('click', bodycheck8);
+		function bodycheck8() {
+			console.log('abd2');
+
+			if ($('.slider8').css("display") == "none") {
+				$('.slider8').css("display", "block");
+			}
+
+		}
+		$('.ttt9').on('click', bodycheck9);
+		function bodycheck9() {
+			console.log('abd2');
+
+			if ($('.slider9').css("display") == "none") {
+				$('.slider9').css("display", "block");
+			}
+		}
+		$('.ttt10').on('click', bodycheck10);
+		function bodycheck10() {
+			console.log('abd2');
+
+			if ($('.slider10').css("display") == "none") {
+				$('.slider10').css("display", "block");
+			}
+
+		}
 	</script>
 </body>
 </html>

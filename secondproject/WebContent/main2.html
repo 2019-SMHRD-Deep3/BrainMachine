@@ -8,68 +8,300 @@
 <head>
 <style type="text/css">
 .toptop {
-	margin: 5% 0 50%;
+   margin: 5% 0 50%;
 }
 
 #allview {
-	width: 100%;
-	text-align: center;
+   width: 100%;
+   text-align: center;
 }
 
 #view {
-	width: 100%;
-	text-align: center;
-	margin: 0px auto;
-	height: 500px;
-	overflow: auto;
+   width: 100%;
+   text-align: center;
+   margin: 0px auto;
+   height: 500px;
+   overflow: auto;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 10px;
+   list-style: none;
+   margin: 0;
+   padding: 10px;
 }
 
 li {
-	text-align: left;
+   text-align: left;
 }
 
 span {
-	color: blue;
+   color: blue;
 }
+
+#container {
+   width: 350px;
+   height: 350px;
+}
+
+#asdf {
+   padding-top: 0px;
+   padding-bottom: 20px;
+   text-align: center;
+}
+
+#qwer {
+   padding-bottom: 0px;
+   padding-top: 0px;
+   text-align: left;
+   border: 0px;
+}
+
+#zxcv {
+   padding-top: 0px;
+   padding-bottom: 0px;
+   text-align: left;
+   border: 0px;
+}
+#sidebar {
+   padding: 0.5em 0.5em 0.5em 0.5em !important;
+   }
 </style>
 <title>asdf</title>
 <meta charset="utf-8" />
 <meta name="viewport"
-	content="width=device-width, initial-scale=1, user-scalable=no" />
+   content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets2/css/main2.css" />
 <noscript>
-	<link rel="stylesheet" href="assets2/css/noscript2.css" />
+   <link rel="stylesheet" href="assets2/css/noscript2.css" />
 </noscript>
 </head>
 <body class="is-preload">
 
-	<!-- Sidebar -->
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<ul>
-					<!--  <li><a href="#intro">Welcome</a></li> -->
-					<li><a href="#one">외향 +개방 인당신의 여행지</a></li>
-					<li><a href="#two">나라별여행지</a></li>
+   <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+   <script type="text/javascript">
+      var sch = location.search;
+      var params = new URLSearchParams(sch);
+      var result3 = params.get('result3');
 
-					<!-- <li><a href="#two">What we do</a></li> -->
-					<li><a href="#three">게시글</a></li>
-				</ul>
-			</nav>
-		</div>
-	</section>
+      window.onload = pageLoad;
+      function pageLoad() {
+         setTimeout(function() {
+            var t = document.getElementsByTagName('tspan')
+            t[13].innerHTML = "";
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+         }, 3000);
+      };
+   </script>
 
-		<!-- Intro -->
-		<!--    <section id="intro" class="wrapper style1 fullscreen fade-up">
+   <!-- Sidebar -->
+   <section id="sidebar">
+      <!-- 그래프 -->
+
+      <div id="anychart-embed-samples-bct-quadrant-chart-07"
+         class="anychart-embed anychart-embed-samples-bct-quadrant-chart-07">
+         <script
+            src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+         <script
+            src="https://cdn.anychart.com/releases/8.7.1/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+         <script
+            src="https://cdn.anychart.com/releases/8.7.1/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+         <div id="ac_style_samples-bct-quadrant-chart-07"
+            style="display: none;">html, body, #container { width: 100%;
+            height: 100%; margin: 0; padding: 0; }</div>
+         <script>
+            (function() {
+               function ac_add_to_head(el) {
+                  var head = document.getElementsByTagName('head')[0];
+                  head.insertBefore(el, head.firstChild);
+               }
+               function ac_add_link(url) {
+                  var el = document.createElement('link');
+                  el.rel = 'stylesheet';
+                  el.type = 'text/css';
+                  el.media = 'all';
+                  el.href = url;
+                  ac_add_to_head(el);
+               }
+               function ac_add_style(css) {
+                  var ac_style = document.createElement('style');
+                  if (ac_style.styleSheet)
+                     ac_style.styleSheet.cssText = css;
+                  else
+                     ac_style.appendChild(document.createTextNode(css));
+                  ac_add_to_head(ac_style);
+               }
+               ac_add_link('https://cdn.anychart.com/releases/8.7.1/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4');
+               ac_add_style(document
+                     .getElementById("ac_style_samples-bct-quadrant-chart-07").innerHTML);
+               ac_add_style(".anychart-embed-samples-bct-quadrant-chart-07{width:600px;height:450px;}");
+            })();
+         </script>
+         <div id="container"></div>
+         <script>
+            anychart.onDocumentReady(function() {
+
+               var EXT = sessionStorage.getItem("EXT");
+               var OPN = sessionStorage.getItem("OPN");
+
+               var data = [ {
+                  x : EXT,
+                  value : OPN
+               }, ];
+
+               // create a chart
+               var chart = anychart.quadrant(data);
+
+               // set the padding of the chart
+               chart.padding(10);
+
+               chart.yScale().minimum(10);
+               chart.yScale().maximum(50);
+               chart.xScale().minimum(10);
+               chart.xScale().maximum(50);
+
+               // configure axes
+               chart.xAxis(0, {
+                  ticks : true,
+                  labels : true
+               });
+               chart.xAxis(1, {
+                  ticks : true,
+                  labels : true
+               });
+               chart.yAxis(0, {
+                  ticks : true,
+                  labels : true
+               });
+               chart.yAxis(1, {
+                  ticks : true,
+                  labels : true
+               });
+
+               // configure quarters
+               chart.quarters({
+                  rightTop : {
+                     title : {
+                        text : "모험 추구  여행자",
+                        fontSize : "16",
+                        fontWeight : "bold",
+                        fontColor : "black"
+                     }
+                  },
+                  rightBottom : {
+                     title : {
+                        text : "감각 추구  여행자",
+                        fontSize : "16",
+                        fontWeight : "bold",
+                        fontColor : "white"
+                     }
+                  },
+                  leftTop : {
+                     title : {
+                        text : "경험 추구  여행자",
+                        fontSize : "16",
+                        fontWeight : "bold",
+                        fontColor : "white"
+                     }
+                  },
+                  leftBottom : {
+                     title : {
+                        text : "안정 추구  여행자",
+                        fontSize : "16",
+                        fontWeight : "bold",
+                        fontColor : "black"
+                     }
+                  },
+               });
+
+               // create the second label on the left-bottom quarter
+               var labelLBottom2 = chart.quarters().leftBottom().label(1);
+               labelLBottom2.useHtml(true);
+               labelLBottom2.text("내향성");
+               labelLBottom2.position("left-bottom");
+               labelLBottom2.offsetX(-33);
+               labelLBottom2.offsetY(-105);
+               labelLBottom2.fontColor("white");
+               labelLBottom2.rotation(-90);
+
+               // create the third label on the left-bottom quarter
+               var labelLBottom3 = chart.quarters().leftBottom().label(3);
+               labelLBottom3.useHtml(true);
+               labelLBottom3.text("폐쇄성");
+               labelLBottom3.position("left-bottom");
+               labelLBottom3.offsetX(132);
+               labelLBottom3.offsetY(30);
+               labelLBottom3.fontColor("white");
+
+               // create the fourth label on the left-bottom quarter
+               var labelLBottom4 = chart.quarters().rightTop().label(4);
+               labelLBottom4.useHtml(true);
+               labelLBottom4.text("개방성");
+               labelLBottom4.position("right-top");
+               labelLBottom4.offsetX(-135);
+               labelLBottom4.offsetY(-30);
+               labelLBottom4.fontColor("white");
+
+               // create the third label on the left-bottom quarter
+               var labelLBottom5 = chart.quarters().rightTop().label(5);
+               labelLBottom5.useHtml(true);
+               labelLBottom5.text("외향성");
+               labelLBottom5.position("left-bottom");
+               labelLBottom5.offsetX(168);
+               labelLBottom5.offsetY(0);
+               labelLBottom5.fontColor("white");
+               labelLBottom5.rotation(90);
+
+               chart.dataArea().background().enabled(true);
+               chart.dataArea().background().fill("#F2F2F2 0.2");
+               chart.background().fill("#00ff0000");
+
+               // set the chart title
+               chart.title().useHtml(true);
+               chart.title("<strong>여행자 유형</font><br>");
+
+               // set the container id
+               chart.container("container");
+
+               // initiate drawing the chart
+               chart.draw();
+               chart.width(350);
+               chart.height(350);
+               var labels = chart.xAxis(0).labels();
+               labels.fontColor("white");
+               var labels2 = chart.yAxis(0).labels();
+               labels2.fontColor("white");
+               var labels = chart.xAxis(1).labels();
+               labels.fontColor("white");
+               var labels2 = chart.yAxis(1).labels();
+               labels2.fontColor("white");
+
+               var title = chart.title();
+               title.fontColor("white");
+               title.fontSize(20);
+
+            });
+         </script>
+         <div class="inner">
+<br><br>
+            <nav>
+               <ul>
+                  <!--  <li><a href="#intro">Welcome</a></li> -->
+                  <li><a href="#one" id="t1"></a></li>
+                  <li><a href="#two">나라별여행지</a></li>
+
+                  <!-- <li><a href="#two">What we do</a></li> -->
+                  <li><a href="#three">게시글</a></li>
+               </ul>
+            </nav>
+         </div>
+   </section>
+
+
+   <!-- Wrapper -->
+   <div id="wrapper">
+
+      <!-- Intro -->
+      <!--    <section id="intro" class="wrapper style1 fullscreen fade-up">
          <div class="inner">
             <h1 class = "toptop">당신의 성향은 ? 이고 당신의 여행지는 ?</h1>
          
@@ -80,60 +312,66 @@ span {
          </div>
       </section> -->
 
-		<!-- One -->
-		<section id="one" class="wrapper style2 spotlights">
-			<section>
-				<a href="#" class="image"><img src="images2/pic01.jpg" alt=""
-					data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>호주 전통문화 공연</h2>
-						<p>호주 부족</p>
-						<ul class="actions">
-							<li><a href="generic2.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section>
-				<a href="#" class="image"><img src="images2/wave.jfif" alt=""
-					data-position="top center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>퍼스</h2>
-						<p>웨이브락</p>
-						<ul class="actions">
-							<li><a href="generic3.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section>
-				<a href="#" class="image"><img src="images2/middle.jfif" alt=""
-					data-position="25% 25%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>핑크호수</h2>
-						<p>미들락</p>
-						<ul class="actions">
-							<li><a href="generic4.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</section>
+      <!-- One -->
+
+      <section id="one" class="wrapper style2 spotlights">
+
+         <section>
+            <a href="#" class="image"><img
+               src="austrailia/image/aust_surf.jpg" alt=""
+               data-position="center center" /></a>
+            <div class="content">
+               <div class="inner">
+                  <h2>서핑</h2>
+                  <p>골드코스트</p>
+                  <ul class="actions">
+                     <li><a href="generic2.html" class="button">Learn more</a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section>
+            <a href="#" class="image"><img
+               src="austrailia/image/aust_diver.jpg" alt=""
+               data-position="top center" /></a>
+            <div class="content">
+               <div class="inner">
+                  <h2>스노쿨링</h2>
+                  <p>베리어리프</p>
+                  <ul class="actions">
+                     <li><a href="generic3.html" class="button">Learn more</a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section>
+            <a href="#" class="image"><img
+               src="austrailia/image/aust_rafting.jpg" alt=""
+               data-position="25% 25%" /></a>
+            <div class="content">
+               <div class="inner">
+                  <h2>래프팅</h2>
+                  <p>배런강</p>
+                  <ul class="actions">
+                     <li><a href="generic4.html" class="button">Learn more</a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </section>
 
 
-		<!-- Two -->
-		<section id="two" class="wrapper style3 fade-up">
-			<div class="inner">
-				<h3>마커를 클릭해 성향에 맞는 전세계 여행지 구경하기</h3>
-				<script type="text/javascript" src="mapdata.js"></script>
-				<script type="text/javascript" src="worldmap.js"></script>
-				<div id="map"></div>
-			</div>
-		</section>
-		<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis
+      <!-- Two -->
+      <section id="two" class="wrapper style3 fade-up">
+         <div class="inner">
+            <h3>마커를 클릭해 성향에 맞는 전세계 여행지 구경하기</h3>
+            <script type="text/javascript" src="mapdata.js"></script>
+            <script type="text/javascript" src="worldmap.js"></script>
+            <br>
+            <div id="map"></div>
+         </div>
+      </section>
+      <!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis
                aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam
                dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit
                amet imperdiet est velit quis lorem.</p>
@@ -181,96 +419,250 @@ span {
          </div>-->
 
 
-		<!-- Three -->
-		<section id="three" class="wrapper style1 fade-up">
-			<div class="inner">
-				<h2>게시글</h2>
-				<p>당신의 성향을 입력해봐요.</p>
-				<!--    <div class="split style1"> -->
+      <!-- Three -->
+      <section id="three" class="wrapper style1 fade-up">
+         <div class="inner">
+            <h2>게시글</h2>
+            <p>당신의 성향을 입력해봐요.</p>
+            <!--    <div class="split style1"> -->
 
 
-				<div id="allview">
+            <div id="allview">
 
 
-					<div id="view">
-						<ul id="list">
-						</ul>
-					</div>
-					<table border="none">
-						<tr>
-							<td><input type="text" placeholder="ID를 입력하세요!"
-								style="width: 300px; height: 2.75em;" id="id2">
-							<td />
-							<td><input type="text" placeholder="내용을 입력하세요!"
-								style="width: 500px; height: 2.75em;" id="content2"></td>
-						</tr>
+               <div id="view">
+                  <table id="list">
+                     <script src="js/jquery-3.4.1.min.js"></script>
+                     <script type="text/javascript">
+                     
+                     
+                        $.ajax({
+                                 url : "SelectChat",
+                                 type : "post",
+                                 dataType : "json",
+                                 data :  '',
 
-					</table>
-					<button id="btn">입력</button>
+                                 success : function(result) {
 
-				</div>
-				<script src="js/jquery-3.4.1.min.js"></script>
-				<script type="text/javascript">
-					$('#btn').on('click', play);
+                                    for (var i = result.length - 1; i >= 0; i--) {
+                                       var flag = result[i].nation;
+                                       var url = 's';
 
-					/* setInterval(play, 2000); */
-					function play() {
-						console.log("★★★★★★★★")
-						var id = $('#id2').val();
-						var content = $('#content2').val();
-						$('#id2').val('');
-						$('#content2').val('');
-						$('#id2').focus();
+                                       console.log(result[i]);
 
-						$.ajax({
-							url : "AddChat",
-							type : "post",
-							dataType : "json",
-							data : 'id=' + id + '&content=' + content,
+                                       if (flag == "영국") {
+                                          url = "flag/england.jpg";
+                                       } else if (flag == "독일") {
+                                          url = "flag/germany.png";
 
-							success : function(result) {
-								$('#list').empty();
-								for (var i = result.length - 1; i >= 0; i--) {
-									var item = '<li><span>' + result[i].id
-											+ '</span>:' + result[i].content
-											+ '</li>';
-									$('#list').append(item);
-								}
-							},
-							error : function() {
+                                       } else if (flag == "말레이시아") {
+                                          url = "flag/malaysia.png";
 
-							}
-						});
+                                       } else if (flag == "아랍에미리트") {
+                                          url = "flag/ArabEmirates.svg";
 
-					}
-				</script>
+                                       } else if (flag == "남아공") {
+                                          url = "flag/south-africa.png";
+
+                                       } else if (flag == "케냐") {
+                                          url = "flag/kenya.png";
+
+                                       } else if (flag == "인도") {
+                                          url = "flag/india.png";
+
+                                       } else if (flag == "파키스탄") {
+                                          url = "flag/pakistan.png";
+
+                                       } else if (flag == "홍콩") {
+                                          url = "flag/hong-kong.png";
+
+                                       } else if (flag == "일본") {
+                                          url = "flag/japan.png";
+
+                                       } else if (flag == "싱가포르") {
+                                          url = "flag/singapore-.png";
+
+                                       } else if (flag == "인도네시아") {
+                                          url = "flag/Indonesia.svg";
+
+                                       } else if (flag == "호주") {
+                                          url = "flag/australia.png";
+
+                                       } else if (flag == "캐나다") {
+                                          url = "flag/canada.png";
+                                       } else if (flag == "멕시코") {
+                                          url = "flag/mexico.png";
+                                       } else if (flag == "브라질") {
+                                          url = "flag/brazile.png";
+                                       } else if (flag == "러시아") {
+                                          url = "flag/russia.png";
+                                       } else if (flag == "폴란드") {
+                                          url = "flag/poland.png";
+                                       } else if (flag == "뉴질랜드") {
+                                          url = "flag/new-zealand.png";
+                                       } else if (flag == "미국") {
+                                          url = "flag/usa.jpg";
+                                       }
+                                       var item = '<tr><td rowspan = "2" id = "asdf" width = "20px"> <br> <img src = '+url+' height = "60px"> <br> </td><td id = "qwer"> <br>'
+                                             + result[i].id
+                                             + '</td></tr><tr><td id = "zxcv">'
+                                             + result[i].content
+                                             + '</td></tr>';
+                                       $('#list:last').append(item);
+                                    }
+                                 },
+                                 error : function() {
+
+                                 }
+                              });
+                     </script>
+                  </table>
+               </div>
+               <table border="none">
+                  <tr>
+                     <td><input type="text" placeholder="ID를 입력하세요!"
+                        style="width: 300px; height: 2.75em;" id="id2">
+                     <td />
+                     <td><input type="text" placeholder="내용을 입력하세요!"
+                        style="width: 500px; height: 2.75em;" id="content2"></td>
+                  </tr>
+
+               </table>
+               <button id="btn">입력</button>
+
+            </div>
+            <script src="js/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript">
+               $('#btn').on('click', play);
+
+               /* setInterval(play, 2000); */
+               function play() {
+                  $('#list').empty();
+                  console.log("★★★★★★★★")
+                  var id = $('#id2').val();
+                  var content = $('#content2').val();
+                  var nation = sessionStorage.getItem("nation");
+                  
+                  console.log("asdfasdfasdf"+nation);
+                  $('#id2').val('');
+                  $('#content2').val('');
+                  $('#id2').focus();
+
+                  $.ajax({
+                           url : "AddChat",
+                           type : "post",
+                           dataType : "json",
+                           data : 'id=' + id + '&content=' + content
+                                 + '&nation=' + nation,
+
+                           success : function(result) {
+
+                              for (var i = result.length - 1; i >= 0; i--) {
+                                 var flag = result[i].nation;
+                                 var url = 's';
+
+                                 console.log(result[i]);
+
+                                 if (flag == "영국") {
+                                    url = "flag/england.jpg";
+                                 } else if (flag == "독일") {
+                                    url = "flag/germany.png";
+
+                                 } else if (flag == "말레이시아") {
+                                    url = "flag/malaysia.png";
+
+                                 } else if (flag == "아랍에미리트") {
+                                    url = "flag/ArabEmirates.svg";
+
+                                 } else if (flag == "남아공") {
+                                    url = "flag/south-africa.png";
+
+                                 } else if (flag == "케냐") {
+                                    url = "flag/kenya.png";
+
+                                 } else if (flag == "인도") {
+                                    url = "flag/india.png";
+
+                                 } else if (flag == "파키스탄") {
+                                    url = "flag/pakistan.png";
+
+                                 } else if (flag == "홍콩") {
+                                    url = "flag/hong-kong.png";
+
+                                 } else if (flag == "일본") {
+                                    url = "flag/japan.png";
+
+                                 } else if (flag == "싱가포르") {
+                                    url = "flag/singapore-.png";
+
+                                 } else if (flag == "인도네시아") {
+                                    url = "flag/Indonesia.svg";
+
+                                 } else if (flag == "호주") {
+                                    url = "flag/australia.png";
+
+                                 } else if (flag == "캐나다") {
+                                    url = "flag/canada.png";
+                                 } else if (flag == "멕시코") {
+                                    url = "flag/mexico.png";
+                                 } else if (flag == "브라질") {
+                                    url = "flag/brazile.png";
+                                 } else if (flag == "러시아") {
+                                    url = "flag/russia.png";
+                                 } else if (flag == "폴란드") {
+                                    url = "flag/poland.png";
+                                 } else if (flag == "뉴질랜드") {
+                                    url = "flag/new-zealand.png";
+                                 } else if (flag == "미국") {
+                                    url = "flag/usa.jpg";
+                                 }
+                                 var item = '<tr><td rowspan = "2" id = "asdf" width = "20px"> <br> <img src = '+url+' height = "60px"> <br> </td><td id = "qwer"> <br>'
+                                       + result[i].id
+                                       + '</td></tr><tr><td id = "zxcv">'
+                                       + result[i].content
+                                       + '</td></tr>';
+                                 $('#list:last').append(item);
+                              }
+                           },
+                           error : function() {
+
+                           }
+                        });
+
+               }
+            </script>
 
 
 
-				<!-- </div> -->
-			</div>
-		</section>
+            <!-- </div> -->
+         </div>
+      </section>
 
-	</div>
+   </div>
 
-	<!-- Footer -->
-	<footer id="footer" class="wrapper style1-alt">
-		<div class="inner">
-			<ul class="menu">
-				<li>&copy; Untitled. All rights reserved.</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-	</footer>
+   <!-- Footer -->
+   <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+         <ul class="menu">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+         </ul>
+      </div>
+   </footer>
 
-	<!-- Scripts -->
-	<script src="assets2/js/jquery.min2.js?ver1"></script>
-	<script src="assets2/js/jquery.scrollex.min2.js?ver1"></script>
-	<script src="assets2/js/jquery.scrolly.min2.js?ver1"></script>
-	<script src="assets2/js/browser.min2.js?ver1"></script>
-	<script src="assets2/js/breakpoints.min2.js?ver1"></script>
-	<script src="assets2/js/util2.js?ver1"></script>
-	<script src="assets2/js/main2.js?ver1"></script>
+   <script type="text/javascript">
+      document.getElementById("t1").innerHTML = "감각 추구 여행자";
+      document.getElementById("t2").innerHTML = result3 + " 여행자";
+   </script>
+
+   <!-- Scripts -->
+   <script src="assets2/js/jquery.min2.js?ver1"></script>
+   <script src="assets2/js/jquery.scrollex.min2.js?ver1"></script>
+   <script src="assets2/js/jquery.scrolly.min2.js?ver1"></script>
+   <script src="assets2/js/browser.min2.js?ver1"></script>
+   <script src="assets2/js/breakpoints.min2.js?ver1"></script>
+   <script src="assets2/js/util2.js?ver1"></script>
+   <script src="assets2/js/main2.js?ver1"></script>
 
 </body>
 </html>

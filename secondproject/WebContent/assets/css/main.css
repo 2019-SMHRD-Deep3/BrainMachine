@@ -26,6 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup,
 	display: block;
 }
 
+
 body {
 	line-height: 1;
 }
@@ -3716,6 +3717,7 @@ select::-ms-expand {
 
 input[type="text"], input[type="password"], input[type="email"], select
 	{
+	width: 20%;
 	height: 2.75em;
 }
 
@@ -3827,6 +3829,7 @@ input[type="radio"]+label:before {
 /* Button */
 input[type="submit"], input[type="reset"], input[type="button"], button,
 	.button {
+	
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -3852,6 +3855,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button,
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+	
 }
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover,
@@ -3929,7 +3933,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 #signup-form>:first-child {
-	margin: 0 0 0 0;
+	margin: 15%;
 }
 
 @media screen and (max-width: 480px) {
